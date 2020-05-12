@@ -9,6 +9,7 @@
     "serverless-offline": "^5.3.3"
   },
   "dependencies": {
+    "ethers": "^4.0.47",
     "jimp": "^0.10.3",
     "sharp": "^0.25.2",
     "svg-captcha": "^1.4.0"
