@@ -4,9 +4,13 @@
   "main": "handler.js",
   "license": "MIT",
   "devDependencies": {
-    "serverless-bundle": "^1.2.5",
+    "serverless-bundle": "^1.3.2",
     "serverless-dotenv-plugin": "^2.1.1",
     "serverless-offline": "^5.3.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jimp": "^0.10.3",
+    "sharp": "^0.25.2",
+    "svg-captcha": "^1.4.0"
+  }
 }
