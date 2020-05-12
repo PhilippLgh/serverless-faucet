@@ -1,8 +1,12 @@
 {
-  "name": "serverless-faucet",
+  "name": "@philipplgh/serverless-faucet",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "handler.js",
   "license": "MIT",
-  "dependencies": {
-  }
+  "devDependencies": {
+    "serverless-bundle": "^1.2.5",
+    "serverless-dotenv-plugin": "^2.1.1",
+    "serverless-offline": "^5.3.3"
+  },
+  "dependencies": {}
 }
