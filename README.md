@@ -12,16 +12,26 @@ Generates a captcha as image or string
 
 Sends funds to an Ethereum address.
 
+## Captchas
+The faucet has a special captcha renderer to be able to render captchas to the command line interface (CLI).
+In order to reliably do this we need to call the API with information about the columns and rows of our terminal.
+
+Node.js example:
+```javascript
+axios.get(`${FAUCET_API}/captcha/${process.stdout.columns}/${process.stdout.rows * 2}`)
+```
 
 ## Configuration
 
-The faucet is configured with the `.env` file.
+The faucet is configured with a `.env` file.
 Three values need to be defined:
 - PRIVATE_KEY : the private key managing the faucet's funds
 - CHALLENGE_KEY : a key used for hmac on the captcha solution 
 - JWT_KEY : used to issue and verify json web tokens (JWT)
 
 ## Deploy
+Serverless is required:
+`npm install serverless -g`
 
 The service can be deployed with `sls deploy`
 
