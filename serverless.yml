@@ -12,6 +12,12 @@ plugins:
 
 custom:
   stage: dev
+  bundle:
+    linting: false             # Enables linting as a part of the build process
+    caching: false
+    packagerOptions:
+      scripts:
+        - rm -rf node_modules/sharp && npm install --arch=x64 --platform=linux --target=12.10.0 sharp
 
 provider:
   name: aws
@@ -26,3 +32,19 @@ functions:
       - http:
           path: hello
           method: get
+  verify-captcha:
+    handler: authorizer.verifyCaptcha
+  captcha:
+    handler: handler.captcha
+    events:
+      - http:
+          path: captcha/{columns}/{rows}
+          method: get
+  faucet:
+    handler: handler.fundAccount
+    events:
+      - http:
+          path: faucet/{network}/{address}
+          method: get
+          cors: true
+          authorizer: verify-captcha
