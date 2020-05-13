@@ -2,6 +2,11 @@
 
 This repository contains everything to host your own Ethereum Faucet as an AWS Lambda service.
 
+## Hosted
+A hosted faucet is available at:
+https://api.ethfaucet.org
+
+## API
 The service has two API endpoints:
 
 `/captcha/{columns}/{rows}`
@@ -34,7 +39,6 @@ curl -s "https://ghvfuly6tj.execute-api.us-east-1.amazonaws.com/dev/captcha/$COL
 The faucet is configured with a `.env` file.
 Three values need to be defined:
 - PRIVATE_KEY : the private key managing the faucet's funds
-- CHALLENGE_KEY : a key used for hmac on the captcha solution 
 - JWT_KEY : used to issue and verify json web tokens (JWT)
 
 ## Deploy
