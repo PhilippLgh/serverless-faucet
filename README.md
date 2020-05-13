@@ -21,6 +21,14 @@ Node.js example:
 axios.get(`${FAUCET_API}/captcha/${process.stdout.columns}/${process.stdout.rows * 2}`)
 ```
 
+Curl examples:
+```shell
+curl -X GET "https://ghvfuly6tj.execute-api.us-east-1.amazonaws.com/dev/captcha/$(tput cols)/$(tput lines)"
+curl -H "Accept: application/json" -X GET "https://ghvfuly6tj.execute-api.us-east-1.amazonaws.com/dev/captcha/$COLUMNS/$LINES" 
+curl -s "https://ghvfuly6tj.execute-api.us-east-1.amazonaws.com/dev/captcha/$COLUMNS/$LINES" | jq '.captcha' 
+```
+
+
 ## Configuration
 
 The faucet is configured with a `.env` file.
@@ -35,10 +43,3 @@ Serverless is required:
 
 The service can be deployed with `sls deploy`
 
-## Test API
-
-```
-curl -H "Accept: application/json" -X GET "https://ghvfuly6tj.execute-api.us-east-1.amazonaws.com/dev/captcha/$COLUMNS/$LINES" 
-curl -X GET "https://ghvfuly6tj.execute-api.us-east-1.amazonaws.com/dev/captcha/$(tput cols)/$(tput lines)"
-curl -s "https://ghvfuly6tj.execute-api.us-east-1.amazonaws.com/dev/captcha/$COLUMNS/$LINES" | jq '.captcha' 
-```
