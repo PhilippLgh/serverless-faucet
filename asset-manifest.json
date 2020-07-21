@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/serverless-faucet/static/css/main.27fd15f6.chunk.css",
-    "main.js": "/serverless-faucet/static/js/main.7352f37f.chunk.js",
-    "main.js.map": "/serverless-faucet/static/js/main.7352f37f.chunk.js.map",
-    "runtime-main.js": "/serverless-faucet/static/js/runtime-main.ec691d13.js",
-    "runtime-main.js.map": "/serverless-faucet/static/js/runtime-main.ec691d13.js.map",
-    "static/js/2.c47e44f6.chunk.js": "/serverless-faucet/static/js/2.c47e44f6.chunk.js",
-    "static/js/2.c47e44f6.chunk.js.map": "/serverless-faucet/static/js/2.c47e44f6.chunk.js.map",
-    "index.html": "/serverless-faucet/index.html",
-    "precache-manifest.4f83cb31b024f7c10ec50b07cc5fc5d3.js": "/serverless-faucet/precache-manifest.4f83cb31b024f7c10ec50b07cc5fc5d3.js",
-    "service-worker.js": "/serverless-faucet/service-worker.js",
-    "static/css/main.27fd15f6.chunk.css.map": "/serverless-faucet/static/css/main.27fd15f6.chunk.css.map",
-    "static/js/2.c47e44f6.chunk.js.LICENSE.txt": "/serverless-faucet/static/js/2.c47e44f6.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/serverless-faucet/static/media/logo.5d5d9eef.svg"
+    "main.css": "/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/static/js/main.066924c4.chunk.js",
+    "main.js.map": "/static/js/main.066924c4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c132cc79.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c132cc79.js.map",
+    "static/js/2.c47e44f6.chunk.js": "/static/js/2.c47e44f6.chunk.js",
+    "static/js/2.c47e44f6.chunk.js.map": "/static/js/2.c47e44f6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.bfa293da7eaa3fe027f361fba7c8f706.js": "/precache-manifest.bfa293da7eaa3fe027f361fba7c8f706.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.27fd15f6.chunk.css.map": "/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.c47e44f6.chunk.js.LICENSE.txt": "/static/js/2.c47e44f6.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ec691d13.js",
+    "static/js/runtime-main.c132cc79.js",
     "static/js/2.c47e44f6.chunk.js",
     "static/css/main.27fd15f6.chunk.css",
-    "static/js/main.7352f37f.chunk.js"
+    "static/js/main.066924c4.chunk.js"
   ]
 }
